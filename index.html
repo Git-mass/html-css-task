@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trend Tracker: Battle for the Market</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main Menu -->
+  <div id="main-menu" class="screen">
+    <h1>Trend Tracker</h1>
+    <button id="play-solo">Play Solo</button>
+    <button id="play-multiplayer">Multiplayer</button>
+    <button id="play-endless">Endless Mode</button>
+    <button id="shop-button">Shop</button>
+    <button id="leaderboard-button">Leaderboard</button>
+    <button id="settings-button">Settings</button>
+    <button id="error-button">Error Button</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <div id="hud">
+      <div id="score">Score: 0</div>
+      <div id="timer">Time: 60</div>
+      <div id="reputation">Reputation: 100</div>
+    </div>
+
+ <!-- Main Container -->
+ <div class="container">
+  <h1>Choose a Category</h1>
+
+  <!-- Category Buttons -->
+  <div class="button-container">
+      <button class="category-button" data-category="edtech">Ed-Tech</button>
+      <button class="category-button" data-category="ott">OTT Platforms</button>
+      <button class="category-button" data-category="fintech">Fintech</button>
+      <button class="category-button" data-category="ecommerce">e-Commerce</button>
+  </div>
+
+  <!-- Score Display -->
+  <div id="score-container">Score: <span id="score">0</span></div>
+
+    <!-- Balloon Image -->
+    <div id="balloon-container">
+      <img id="balloon" src="balloon.png" alt="Balloon">
+    </div>
+
+    <div id="trend-targets"></div>
+    <div id="weapon-ui">
+      <div class="weapon active-weapon" data-weapon="blaster">Trend Blaster</div>
+      <div class="weapon" data-weapon="sniper">Trend Sniper</div>
+    </div>
+    <div id="powerup-notification"></div>
+  </div>
+
+  <!-- Shop Screen -->
+  <div id="shop-screen" class="screen hidden">
+    <h2>Shop</h2>
+    <div id="shop-items">
+      <div class="item" data-cost="100">Trend Blaster</div>
+      <div class="item" data-cost="500">Trend Sniper</div>
+      <div class="item" data-cost="200">Trend Magnifier</div>
+    </div>
+    <button id="back-to-menu">Back to Menu</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
